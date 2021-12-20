@@ -2,48 +2,41 @@ import './App.css';
 
 function App() {
   const olaMundo= "Ola Mundo";
+  const d = new Date();
 
   return (
     <div className="App">
       <header className="App-header">        
         <h2>
-          {olaMundo.toUpperCase()}
+          {olaMundo.toUpperCase() + " " + d} 
         </h2>
         <h2>
-          {olaMundo.toLowerCase()}
+          {olaMundo.toLowerCase() + " " + d}
         </h2>
         <h2>
-          {olaMundo.slice(0, 3)}
+          {olaMundo.slice(0, 3) + " " + d}
         </h2>
         <h2>
-          {olaMundo.split('').reverse().join('')}
+          {olaMundo.split('').reverse().join('') + " " + d}
         </h2>
         <h2>
-          {olaMundo}
+          <i>{olaMundo + " " + d}</i>
         </h2>
         <h2>
-          {olaMundo}
+          {olaMundo.split('').sort(() => {return 0.5-Math.random()}).join('') + " " + d}
         </h2>
         <h2>
-          {olaMundo}
+          {olaMundo.repeat(2) + " " + d} 
         </h2>
         <h2>
-          {olaMundo}
+          {olaMundo.charAt(4) + " " + d}
         </h2>
         <h2>
-          {olaMundo}
+          {olaMundo + " " + d}
         </h2>
         <h2>
-          {olaMundo}
-        </h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          {olaMundo + " " + d}
+        </h2>        
       </header>
     </div>
   );
