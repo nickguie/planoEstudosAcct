@@ -31,10 +31,10 @@ function App() {
         <h2>
           {olaMundo.charAt(4) + " " + d}
         </h2>
-        <h2>
+        <h2 class="olaMundo9">
           {olaMundo + " " + d}
         </h2>
-        <h2>
+        <h2 class="olaMundo10">
           {olaMundo + " " + d}
         </h2>        
       </header>
